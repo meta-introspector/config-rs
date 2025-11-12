@@ -123,7 +123,7 @@ dependencies = [
 [[package]]
 name = "base64"
 version = "0.22.1"
-source = "git+https://github.com/meta-introspector/rust-base64?branch=feature/CRQ-016-nixify#42e6caba1738c795528415cf25d63d9a01e49c3b"
+source = "git+https://github.com/meta-introspector/rust-base64?branch=feature/CRQ-016-nixify#bf44ac0b08e62bc1f2de5bbd81ea13db1e771854"
 
 [[package]]
 name = "bitflags"
