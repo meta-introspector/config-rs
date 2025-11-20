@@ -86,14 +86,14 @@
 # wildcard_imports = "warn"
 # zero_sized_map_values = "warn"
 
-[profile.dev]
-panic = "abort"
+# [profile.dev]
+# panic = "abort"
 
-[profile.release]
-panic = "abort"
-codegen-units = 1
-lto = true
-# debug = "line-tables-only"  # requires Cargo 1.71
+# [profile.release]
+# panic = "abort"
+# codegen-units = 1
+# lto = true
+# # debug = "line-tables-only"  # requires Cargo 1.71
 
 [package]
 name = "config"
@@ -194,8 +194,8 @@ required-features = ["json", "async"]
 [lints]
 workspace = true
 
-[patch.crates-io]
-time-macros = { git = "https://github.com/meta-introspector/time-rs", branch = "feature/CRQ-016-nixify", features = [ "default", "formatting", "large-dates",   "parsing",   "serde" ] }
-time = { git = "https://github.com/meta-introspector/time-rs", branch = "feature/CRQ-016-nixify", features = [  "default", "alloc", "formatting", "large-dates", "local-offset", "macros", "parsing", "quickcheck", "serde-human-readable", "serde-well-known", "std", "rand", "serde",  "wasm-bindgen"] }
-base64 = { branch = "feature/CRQ-016-nixify",      git = "https://github.com/meta-introspector/rust-base64" }
-ron = { branch = "feature/CRQ-016-nixify",      git = "https://github.com/meta-introspector/ron-rs" }
+# [patch.crates-io]
+# time-macros = { git = "https://github.com/meta-introspector/time-rs", branch = "feature/CRQ-016-nixify", features = [ "default", "formatting", "large-dates",   "parsing",   "serde" ] }
+# time = { git = "https://github.com/meta-introspector/time-rs", branch = "feature/CRQ-016-nixify", features = [  "default", "alloc", "formatting", "large-dates", "local-offset", "macros", "parsing", "quickcheck", "serde-human-readable", "serde-well-known", "std", "rand", "serde",  "wasm-bindgen"] }
+# base64 = { branch = "feature/CRQ-016-nixify",      git = "https://github.com/meta-introspector/rust-base64" }
+# ron = { branch = "feature/CRQ-016-nixify",      git = "https://github.com/meta-introspector/ron-rs" }
